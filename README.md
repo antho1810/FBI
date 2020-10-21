@@ -12,7 +12,7 @@ ng serve
 ## Abrimos nuestro editor de texto favorito y continuamos con las siguientes instrucciones
 
 ## Modificar index.html y app.compononent.html
-  index.html
+  1. index.html
   <!doctype html>
 <html lang="en">
 <head>
@@ -33,7 +33,8 @@ ng serve
 </body>
 </html>
 
-  app.component.hmtl
+  2. app.component.hmtl
+  
   <nav class="navbar navbar-expand-lg navbar-inverse bg-inverse bg-light">
   <a class="navbar-brand" [routerLink]="['home']">Actores</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,9 +63,9 @@ ng serve
 ## Crear service
  ng g service Servicios/actores
 ## Crear los componentes home, actores y actor
- ng g c home
- ng g c actores
- ng g c actor
+1. ng g c home
+2. ng g c actores
+3. ng g c actor
 
  ## Modificar app.module.ts, actores.service.ts, app-routing.module.ts, actores.component.ts, actor.component.ts
 
@@ -291,7 +292,7 @@ export class ActorComponent {
 
 
 ## Modificar home.component.html, actores.component.html, actor.component.html
-   home.component.html
+   1. home.component.html
    <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h1 class="display-4">Actores Famosos</h1>
@@ -299,7 +300,7 @@ export class ActorComponent {
     </div>
   </div>
 
-  actores.component.html
+ 2. actores.component.html
   <h1>Actores <small>Peliculas y Series</small></h1>
 <hr>
 
@@ -321,7 +322,7 @@ export class ActorComponent {
 
 </div>
 
-actor.component.html
+   3. actor.component.html
 <h1>{{actor.Nombre}} <small>{{actor.Nacimiento}}</small></h1>
 <hr>
 <div class="row">
