@@ -372,3 +372,5 @@ export class ActorComponent {
     margin-top: 50 px;
 }
 ```
+## Revisar el pagina
+Revisa la pagina despues de haber hecho todos las modificaciones.  http://localhost:4200/
