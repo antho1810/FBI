@@ -1,9 +1,9 @@
 # FBI
 ## Abrimos el cmd para hacer las instrucciones principales
-mkdir FBI
-cd FBI
-ng new FBI
-cd FBI
+1. mkdir FBI
+2. cd FBI
+3. ng new FBI
+4. cd FBI
 
 ## Ponga a correr o funcionar el proyecto angular
 ng serve
