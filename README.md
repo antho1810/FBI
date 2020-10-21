@@ -5,14 +5,6 @@
 3. ng new FBI
 4. cd FBI
 
-```
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
-```
-
 ## Ponga a correr o funcionar el proyecto angular
 ng serve
 
@@ -21,6 +13,7 @@ ng serve
 
 ## Modificar index.html y app.compononent.html
   1. index.html
+  ```
   <!doctype html>
 <html lang="en">
 <head>
@@ -40,8 +33,10 @@ ng serve
   <app-root></app-root>
 </body>
 </html>
+```
 
   2. app.component.hmtl
+  ```
   
   <nav class="navbar navbar-expand-lg navbar-inverse bg-inverse bg-light">
      <a class="navbar-brand" [routerLink]="['home']">Actores</a>
@@ -67,6 +62,7 @@ ng serve
 <div class="container main-container">
   <router-outlet></router-outlet>
 </div>
+```
 
 ## Crear service
  ng g service Servicios/actores
@@ -78,7 +74,7 @@ ng serve
  ## Modificar app.module.ts, actores.service.ts, app-routing.module.ts, actores.component.ts, actor.component.ts
 
  1. app.module.ts
-  
+  ```
   import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -111,10 +107,11 @@ import { ActorComponent } from './actor/actor.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+```
 
 
  2. actores.service.ts
- 
+ ```
   import { Injectable } from '@angular/core';
 
 @Injectable()
@@ -213,10 +210,10 @@ export interface Actor {
     Peliculas: string;
     Series: string;
 }
-
+```
 
  3. app-routing.module.ts
-
+```
  import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ActoresComponent } from './actores/actores.component';
@@ -267,9 +264,10 @@ export class ActoresComponent implements OnInit {
   }
 
 }
+```
 
 4. actor.component.ts
-
+```
  import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute} from '@angular/router'
 
@@ -297,18 +295,20 @@ export class ActorComponent {
 
 }
 
-
+```
 
 ## Modificar home.component.html, actores.component.html, actor.component.html
    1. home.component.html
+   ```
    <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h1 class="display-4">Actores Famosos</h1>
       <p class="lead">Esta pagina es para informarte sobre los Actores famosos en peliculas y series.</p>
     </div>
   </div>
-
+```
  2. actores.component.html
+ ```
   <h1>Actores <small>Peliculas y Series</small></h1>
 <hr>
 
@@ -329,8 +329,9 @@ export class ActorComponent {
   </div>
 
 </div>
-
+```
    3. actor.component.html
+   ```
 <h1>{{actor.Nombre}} <small>{{actor.Nacimiento}}</small></h1>
 <hr>
 <div class="row">
@@ -361,11 +362,13 @@ export class ActorComponent {
 
 </div>
 </div>
-
+```
 ## Modificar styles.css
+```
   body{
     padding-bottom: 20 px;
 }
 .main-container{
     margin-top: 50 px;
 }
+```
