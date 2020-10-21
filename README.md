@@ -5,6 +5,14 @@
 3. ng new FBI
 4. cd FBI
 
+```
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
+}
+```
+
 ## Ponga a correr o funcionar el proyecto angular
 ng serve
 
