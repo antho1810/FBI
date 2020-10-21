@@ -1,0 +1,29 @@
+<h1>{{actor.Nombre}} <small>{{actor.Nacimiento}}</small></h1>
+<hr>
+<div class="row">
+
+    <div class="col-md-4">
+        <br><br>
+        <a [routerLink]="['/actores']" class="btn btn-outline-danger "  >Regresar</a>
+
+    </div>
+    <br><br>
+    <div class="col-md-8">
+        <h3>{{actor.Nombre}}</h3>
+        <hr>
+        <p>
+           {{actor.Bio}}
+        </p>
+        <div>
+            <p>
+               Peliculas: {{actor.Peliculas}}
+            </p>
+            <br>
+            <p>
+               Series: {{actor.Series}}
+            </p>
+        </div>
+
+    </div>
+
+</div>
